@@ -27,7 +27,7 @@ def send_mail(smtp_server,port,sender,psw,receiver):
     msg['To']=receiver
     content='''
     Dear all:
-            附件是自动化报告，请查收！'''
+            附件是自动化报告s，请查收！'''
     msg.attach(email.mime.text.MIMEText(content,'plain','utf-8'))
     smtp=smtplib.SMTP()
     smtp.connect(smtp_server,port)
