@@ -26,8 +26,8 @@ def send_mail(smtp_server,port,sender,psw,receiver,fujian):
     except smtplib.SMTPException:
         print("send mail fail")
 
-# a=config.readconfig.getconfvalue("email")
-# send_mail(a[0],a[4],a[1],a[2],a[3])
+a=config.readconfig.getconfvalue("email")
+send_mail(a[0],a[4],a[1],a[2],a[3],r"d:\apitest\result")
 
 
 

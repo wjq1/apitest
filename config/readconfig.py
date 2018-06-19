@@ -42,6 +42,7 @@ import configparser
 import os
 nowpath=os.path.realpath(__file__)
 path1=os.path.split(nowpath)[0]
+print(path1)
 confpath=os.path.join(path1,"config.ini")
 def getconfvalue(section):
     value=[]
